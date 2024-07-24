@@ -1,0 +1,246 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("radiumstrip.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-y: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo img {
+  width: 200px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+nav a:last-of-type {
+  color: #00b8a9;
+  margin-right: 12px;
+}
+
+.search-container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-container input {
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.search-container button {
+  background-color: black;
+  border: none;
+  color: white;
+  width: 40px; 
+  height: 40px;
+  cursor: pointer;
+  background-image: url("search-icon.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+main {
+  padding: 40px 20px;
+  margin: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 24px; 
+  display: flex;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 16px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  font-size: 46px;
+  color: #00b8a9;
+  padding-right: 8px;
+}
+
+.normaltext {
+  font-size: 36px; 
+  font-weight: bold;
+}
+
+p {
+  max-width: 100%;
+  line-height: 1.5;
+  margin-left: 40px;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 70%;
+  height: 100%;
+  background-image: url("radiumstrip.jpeg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.boldtext {
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    width: 60px;  
+    height: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    margin: 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: center; 
+  }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  nav {
+    display: none;  
+  }
+
+  .search-container {
+    flex: 2;             
+    margin: 0;              
+    max-width: 200px;       
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    flex: 1;  
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .menu-toggle span {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  main {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .columntext {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    }
+  h1 {
+    font-size: 20px;
+  }
+
+  .arrow {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom:30px;
+  }
+  .boldtext{
+    padding-left: 0px;
+
+  }
+  .highlight {
+    font-size: 30px; 
+    font-weight: bold;
+  }
+
+  .normaltext {
+    font-size: 24px; 
+  }
+
+  p {
+    width: 320px;
+    margin: 10px 14px;  
+    padding: 0 10px;    
+    margin-right: 0px;
+    padding-right:0px ;
+}
+p br{
+    display: none;
+}
+  .nor{
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 80px;
+  }
+}
